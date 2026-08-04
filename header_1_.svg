@@ -1,0 +1,119 @@
+<svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+  <defs>
+    <style>
+      .bg{fill:none}
+      .gr{stroke:#30363d;stroke-width:1;fill:none}
+      .cl{fill:#ffffff}
+      .ca{fill:#238636}
+      .db{fill:#f0f6fc}
+      .de{fill:#0d1117}
+      .ht{fill:none;stroke:#f0f6fc;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+      .by{fill:#8b949e;font-size:11px;font-family:'Courier New',monospace;letter-spacing:2px}
+      .sc{fill:#8b949e;font-size:11px;font-family:'Courier New',monospace}
+      @keyframes CACTUS{0%{transform:translateX(800px)}100%{transform:translateX(-60px)}}
+      @keyframes DINO_JUMP{
+        0%{transform:translateY(0px)}
+        76%{transform:translateY(0px)}
+        83%{transform:translateY(-50px)}
+        90%{transform:translateY(-50px)}
+        97%{transform:translateY(0px)}
+        100%{transform:translateY(0px)}
+      }
+      @keyframes LEG_L{0%,100%{transform:scaleY(1) translateY(0px)}50%{transform:scaleY(0.6) translateY(3px)}}
+      @keyframes LEG_R{0%,100%{transform:scaleY(0.6) translateY(3px)}50%{transform:scaleY(1) translateY(0px)}}
+      @keyframes TAIL{0%,100%{transform:rotate(0deg)}50%{transform:rotate(10deg)}}
+      @keyframes CLD_A{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+      @keyframes CLD_B{from{transform:translateX(0)}to{transform:translateX(-800px)}}
+      @keyframes GND{from{transform:translateX(0)}to{transform:translateX(-40px)}}
+      @keyframes dH{0%,3%{stroke-dashoffset:40}17%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes dE{0%,17%{stroke-dashoffset:36}31%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes dL1{0%,31%{stroke-dashoffset:28}43%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes dL2{0%,43%{stroke-dashoffset:28}55%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes dO{0%,55%{stroke-dashoffset:55}73%{stroke-dashoffset:0}100%{stroke-dashoffset:0}}
+      @keyframes byF{0%,72%{opacity:0}84%{opacity:1}100%{opacity:1}}
+      @keyframes CUR_MV{
+        0%{transform:translateX(0px)}3%{transform:translateX(18px)}
+        17%{transform:translateX(18px)}19%{transform:translateX(34px)}
+        31%{transform:translateX(34px)}33%{transform:translateX(48px)}
+        43%{transform:translateX(48px)}45%{transform:translateX(62px)}
+        55%{transform:translateX(62px)}57%{transform:translateX(97px)}
+        100%{transform:translateX(97px)}
+      }
+      @keyframes CUR_BLINK{0%,49%{opacity:1}50%,100%{opacity:0}}
+      .cactus-move{animation:CACTUS 3.2s linear infinite}
+      .dino-jump{animation:DINO_JUMP 3.2s ease-in-out infinite;transform-origin:0 0}
+      .leg-l{animation:LEG_L 0.28s linear infinite;transform-origin:3px 0}
+      .leg-r{animation:LEG_R 0.28s linear infinite;transform-origin:3px 0}
+      .tail-wag{animation:TAIL 0.28s linear infinite;transform-origin:0 4px}
+      .cld-a{animation:CLD_A 18s linear infinite}
+      .cld-b{animation:CLD_B 26s linear infinite}
+      .gnd-scroll{animation:GND 0.35s linear infinite}
+      .pH{stroke-dasharray:40;animation:dH 7s ease infinite}
+      .pE{stroke-dasharray:36;animation:dE 7s ease infinite}
+      .pL1{stroke-dasharray:28;animation:dL1 7s ease infinite}
+      .pL2{stroke-dasharray:28;animation:dL2 7s ease infinite}
+      .pO{stroke-dasharray:55;animation:dO 7s ease infinite}
+      .byg{animation:byF 7s ease infinite}
+      .cur{fill:#f0f6fc;animation:CUR_BLINK 0.55s step-end infinite,CUR_MV 7s ease infinite}
+    </style>
+  </defs>
+  <rect class="bg" width="800" height="160"/>
+  <g class="cld-a">
+    <rect class="cl" x="80" y="18" width="55" height="11" rx="5"/>
+    <rect class="cl" x="300" y="12" width="70" height="11" rx="5"/>
+    <rect class="cl" x="550" y="20" width="48" height="11" rx="5"/>
+    <rect class="cl" x="750" y="14" width="60" height="11" rx="5"/>
+  </g>
+  <g class="cld-b">
+    <rect class="cl" x="180" y="26" width="40" height="9" rx="4"/>
+    <rect class="cl" x="440" y="16" width="55" height="9" rx="4"/>
+    <rect class="cl" x="680" y="24" width="42" height="9" rx="4"/>
+  </g>
+  <g class="gnd-scroll">
+    <rect fill="#21262d" x="10" y="122" width="14" height="2" rx="1"/>
+    <rect fill="#21262d" x="60" y="122" width="22" height="2" rx="1"/>
+    <rect fill="#21262d" x="120" y="122" width="10" height="2" rx="1"/>
+    <rect fill="#21262d" x="180" y="122" width="18" height="2" rx="1"/>
+    <rect fill="#21262d" x="240" y="122" width="8" height="2" rx="1"/>
+    <rect fill="#21262d" x="300" y="122" width="24" height="2" rx="1"/>
+    <rect fill="#21262d" x="370" y="122" width="10" height="2" rx="1"/>
+    <rect fill="#21262d" x="430" y="122" width="18" height="2" rx="1"/>
+    <rect fill="#21262d" x="500" y="122" width="12" height="2" rx="1"/>
+    <rect fill="#21262d" x="560" y="122" width="20" height="2" rx="1"/>
+    <rect fill="#21262d" x="630" y="122" width="8" height="2" rx="1"/>
+    <rect fill="#21262d" x="690" y="122" width="16" height="2" rx="1"/>
+    <rect fill="#21262d" x="750" y="122" width="20" height="2" rx="1"/>
+  </g>
+  <g transform="translate(0,82)">
+    <g class="cactus-move">
+      <rect class="ca" x="7" y="0" width="9" height="36" rx="2"/>
+      <rect class="ca" x="0" y="8" width="9" height="6" rx="2"/>
+      <rect class="ca" x="0" y="5" width="7" height="15" rx="2"/>
+      <rect class="ca" x="16" y="13" width="9" height="6" rx="2"/>
+      <rect class="ca" x="16" y="10" width="7" height="15" rx="2"/>
+    </g>
+  </g>
+  <g transform="translate(90,99)">
+    <g class="dino-jump">
+      <g class="tail-wag"><rect class="db" x="-7" y="3" width="9" height="5" rx="2"/></g>
+      <rect class="db" x="0" y="0" width="18" height="14" rx="2"/>
+      <rect class="db" x="12" y="-8" width="7" height="9" rx="2"/>
+      <rect class="db" x="13" y="-15" width="11" height="9" rx="2"/>
+      <rect class="db" x="22" y="-13" width="4" height="3" rx="1"/>
+      <rect class="de" x="18" y="-13" width="3" height="3" rx="1"/>
+      <g class="leg-l"><rect class="db" x="2" y="14" width="5" height="7" rx="2"/></g>
+      <g class="leg-r"><rect class="db" x="11" y="14" width="5" height="7" rx="2"/></g>
+    </g>
+  </g>
+  <line class="gr" x1="0" y1="120" x2="800" y2="120"/>
+  <g transform="translate(16,14)">
+    <path class="ht pH" d="M0,34 L0,0 M0,17 L18,17 M18,0 L18,34"/>
+    <path class="ht pE" d="M24,0 L24,34 M24,0 L40,0 M24,17 L38,17 M24,34 L40,34"/>
+    <path class="ht pL1" d="M46,0 L46,34 M46,34 L60,34"/>
+    <path class="ht pL2" d="M66,0 L66,34 M66,34 L80,34"/>
+    <path class="ht pO" d="M88,17 A13,17 0 1 1 88.01,17"/>
+    <rect class="cur" x="114" y="0" width="2" height="34"/>
+    <g class="byg"><text class="by" x="2" y="50">by anaya</text></g>
+  </g>
+  <text class="sc" x="784" y="18" text-anchor="end">HI 00247</text>
+</svg>
